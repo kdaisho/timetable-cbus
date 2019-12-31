@@ -1,2 +1,2 @@
 # timetable-cbus
-React pet project
+Pet project with React
