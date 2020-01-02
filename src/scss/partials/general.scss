@@ -2,16 +2,23 @@ body * {
     margin: 0;
     padding: 0;
 }
+
 header {
     background: brown;
     color: #fff;
 }
+
+.buttons:last-child {
+    margin-bottom: 0;
+}
+
 .buttons-title {
     display: inline-block;
     padding-right: 1rem;
     text-align: right;
     width: 225px;
 }
+
 .container-table {
     max-width: 100%;
     margin-left: 1.5rem;
@@ -20,12 +27,13 @@ header {
 
 .table-scroll {
     overflow-x: auto;
-    margin-left: 75px;
+    margin-left: 275px;
 }
 
 .fixed {
     position: absolute;
     left: 0;
     padding: 0 50px;
-    width: 100px;
+    text-align: right;
+    width: 300px;
 }

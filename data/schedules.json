@@ -1,0 +1,38 @@
+{
+    "rojin": {
+        "weekday": [
+            {
+                "id": 0,
+                "name": "Sunabe Chukijo",
+                "hours": ["08:00", "09:25", "10:55", "13:05", "14:50", "16:30"]
+            },
+            {
+                "id": 1,
+                "name": "Sunabe-ku Kominkan",
+                "hours": ["08:01", "09:26", "10:56", "13:06", "14:51", "16:31"]
+            },
+            {
+                "id": 2,
+                "name": "Yabiku Sanfujinka, Shonika-mae",
+                "hours": ["08:02", "09:27", "10:57", "13:07", "14:52", "16:32"]
+            }
+        ],
+        "weenkend": [
+            {
+                "id": 0,
+                "name": "Sunabe Chukijo",
+                "hours": ["09:00", "10:25", "12:35", "14:15", "16:00"]
+            },
+            {
+                "id": 1,
+                "name": "Sunabe-ku Kominkan",
+                "hours": ["09:01", "10:26", "12:36", "14:16", "16:01"]
+            },
+            {
+                "id": 2,
+                "name": "Yabiku Sanfujinka, Shonika-mae",
+                "hours": ["09:02", "10:27", "12:37", "14:17", "16:02"]
+            }
+        ]
+    }
+}

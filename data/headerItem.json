@@ -1,0 +1,39 @@
+{
+    "title": "北谷町コミュニティバス",
+    "weekday": {
+        "name": "平日",
+        "value": "weekday"
+    },
+    "weekend": {
+        "name": "土休日",
+        "value": "weekend"
+    },
+    "directions": [
+        {
+            "id": 0,
+            "title": "北谷町老人福祉センター方面",
+            "type": "rojin",
+            "weekday": {
+                "name": "平日",
+                "value": "weekday"
+            },
+            "weekend": {
+                "name": "土休日",
+                "value": "weekend"
+            }
+        },
+        {
+            "id": 1,
+            "title": "砂辺区公民館方面",
+            "type": "sunabe",
+            "weekday": {
+                "name": "平日",
+                "value": "weekday"
+            },
+            "weekend": {
+                "name": "土休日",
+                "value": "weekend"
+            }
+        }
+    ]
+}

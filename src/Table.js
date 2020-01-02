@@ -1,74 +1,46 @@
-import React from "react";
-import time from "./data/schedules.json";
+import React, { Component } from "react";
 
-// const Table = props => (
-//     <div>
-//         <h2 className="title is-5">{props.direction}</h2>
-//         <div className="container-table section">
-//             <div className="table-scroll">
-//                 <table className="table">
-//                     <thead>
-//                         <tr>
-//                             <td className="fixed">Stop</td>
-//                             <td colSpan="6">Time</td>
-//                         </tr>
-//                     </thead>
-//                     <tbody>
-//                         <tr>
-//                             <td className="fixed">
-//                                 {/* {times.map(t => t.name)} */}
-//                             </td>
-//                             {/* {times.map(h =>
-//                                 h.hours.map(time => <td key={time}>{time}</td>)
-//                             )} */}
-//                         </tr>
-//                     </tbody>
-//                 </table>
-//             </div>
-//         </div>
-//     </div>
-// );
-class Table extends React.Component {
+class Table extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            title: props.direction
-        };
-    }
-
-    static getDerivedStateFromProps(nextProps, prevState) {
-        console.log(nextProps);
-        return { title: nextProps.direction };
+        this.state = {};
+        // console.log(props);
+        console.log(props.arrivals);
+        console.log(props.arrivals[props.directionId][props.dayId]);
+        console.log(props.directionId);
+        console.log(props.dayId);
     }
 
     render() {
-        const times = time.arrivals;
         return (
-            <div>
-                <h2 className="title is-5">{this.state.title}</h2>
+            <div className="container">
+                <h2 className="title is-5">
+                    {this.props.direction} {this.props.day}
+                </h2>
                 <div className="container-table section">
                     <div className="table-scroll">
                         <table className="table">
                             <thead>
                                 <tr>
-                                    <td className="fixed">Stop</td>
-                                    <td colSpan="6">Time</td>
+                                    <td className="fixed">Bus Stops</td>
+                                    <td colSpan="6">&nbsp;</td>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td className="fixed">
-                                        {/* <span className="po"> */}
-                                        {times.map(t => t.name)}
-                                        {/* </span> */}
-                                    </td>
-                                    {/* {times.map(h => h.hours.map(h => <td>h</td>))} */}
-                                    {times.map(h =>
-                                        h.hours.map(time => (
-                                            <td key={time}>{time}</td>
-                                        ))
-                                    )}
-                                </tr>
+                                {this.props.arrivals[this.props.directionId][
+                                    this.props.dayId
+                                ].map(row => {
+                                    return (
+                                        <tr key={row.id}>
+                                            <td className="fixed">
+                                                {row.name}
+                                            </td>
+                                            {row.hours.map(h => (
+                                                <td key={h}>{h}</td>
+                                            ))}
+                                        </tr>
+                                    );
+                                })}
                             </tbody>
                         </table>
                     </div>
