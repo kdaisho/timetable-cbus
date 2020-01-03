@@ -12,7 +12,7 @@ const Table = props => {
                     <table className="table">
                         <thead>
                             <tr>
-                                <td className="fixed">Bus Stops</td>
+                                <td className="fixed">停留所</td>
                                 <td colSpan="6">&nbsp;</td>
                             </tr>
                         </thead>
