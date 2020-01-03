@@ -4,9 +4,7 @@ class Table extends Component {
     constructor(props) {
         super(props);
         this.state = {};
-        // console.log(props);
         console.log(props.arrivals);
-        console.log(props.arrivals[props.directionId][props.dayId]);
         console.log(props.directionId);
         console.log(props.dayId);
     }
@@ -15,7 +13,7 @@ class Table extends Component {
         return (
             <div className="container">
                 <h2 className="title is-5">
-                    {this.props.direction} {this.props.day}
+                    {this.props.direction} - {this.props.day}
                 </h2>
                 <div className="container-table section">
                     <div className="table-scroll">
@@ -27,7 +25,7 @@ class Table extends Component {
                                 </tr>
                             </thead>
                             <tbody>
-                                {this.props.arrivals[this.props.directionId][
+                                {/* {this.props.arrivals[this.props.directionId][
                                     this.props.dayId
                                 ].map(row => {
                                     return (
@@ -40,7 +38,7 @@ class Table extends Component {
                                             ))}
                                         </tr>
                                     );
-                                })}
+                                })} */}
                             </tbody>
                         </table>
                     </div>

@@ -9,19 +9,20 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            // arrivals: schedules.rojin.weekdays,
             arrivals: schedules,
-            direction: headerItem.directions[0].title,
-            directionId: headerItem.directions[0].type,
+            direction: headerItem.directions[0].dirName,
+            directionId: headerItem.directions[0].dirId,
             day: headerItem.directions[0].weekday.name,
             dayId: headerItem.directions[0].weekday.value
         };
+
         this.toggleDirection = event => {
+            console.log(event.target.dataset.dirname);
             this.setState({
-                // arrivals: schedules.arrivals,
-                direction: event.target.dataset.direction,
-                directionId: event.target.value,
-                day: event.target.dataset.day
+                direction: event.target.dataset.dirname,
+                type: event.target.dataset.type,
+                day: event.target.dataset.day,
+                dayId: event.target.dataset.dayid
             });
         };
     }
@@ -30,12 +31,11 @@ class App extends Component {
         return (
             <section>
                 <Header
-                    headerItem={headerItem}
+                    directions={headerItem.directions}
                     toggleDirection={this.toggleDirection}
                 />
                 <Table
                     arrivals={this.state.arrivals}
-                    headerItem={headerItem}
                     direction={this.state.direction}
                     directionId={this.state.directionId}
                     day={this.state.day}

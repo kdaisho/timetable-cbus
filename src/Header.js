@@ -2,11 +2,11 @@ import React, { Component } from "react";
 
 class Header extends Component {
     constructor(props) {
-        // console.log(props);
+        console.log("ya", props);
         super(props);
-        this.state = {
-            title: props.headerItem.title
-        };
+        // this.state = {
+        //     title: props.headerItem.title
+        // };
     }
 
     render() {
@@ -14,30 +14,30 @@ class Header extends Component {
             <header>
                 <div className="container">
                     <h1 className="title is-5 has-text-white">
-                        {this.state.title}
+                        北谷町コミュニティバス
                     </h1>
-                    {this.props.headerItem.directions.map(direction => (
-                        <div className="buttons" key={direction.id}>
-                            <span className="buttons-title">
-                                {direction.title}
-                            </span>
+                    {this.props.directions.map(dir => (
+                        <div className="buttons" key={dir.id}>
+                            <span className="buttons-title">{dir.dirName}</span>
                             <button
                                 className="button is-light is-small"
                                 onClick={this.props.toggleDirection}
-                                data-direction={direction.title}
-                                data-day={direction.weekday}
-                                value={direction.type}
+                                data-dirname={dir.dirName}
+                                data-dirid={dir.dirId}
+                                data-day={dir.weekday.name}
+                                data-dayid={dir.weekday.value}
                             >
-                                {direction.weekday.name}
+                                {dir.weekday.name}
                             </button>
                             <button
                                 className="button is-light is-small"
                                 onClick={this.props.toggleDirection}
-                                data-direction={direction.title}
-                                data-day={direction.weekend}
-                                value={direction.type}
+                                data-dirname={dir.dirName}
+                                data-dirid={dir.dirId}
+                                data-day={dir.weekend.name}
+                                data-dayid={dir.weekend.value}
                             >
-                                {direction.weekend.name}
+                                {dir.weekend.name}
                             </button>
                         </div>
                     ))}

@@ -1,5 +1,5 @@
 {
-    "title": "北谷町コミュニティバス",
+    "appName": "北谷町コミュニティバス",
     "weekday": {
         "name": "平日",
         "value": "weekday"
@@ -11,8 +11,8 @@
     "directions": [
         {
             "id": 0,
-            "title": "北谷町老人福祉センター方面",
-            "type": "rojin",
+            "dirName": "北谷町老人福祉センター方面",
+            "dirId": "rojin",
             "weekday": {
                 "name": "平日",
                 "value": "weekday"
@@ -24,8 +24,8 @@
         },
         {
             "id": 1,
-            "title": "砂辺区公民館方面",
-            "type": "sunabe",
+            "dirName": "砂辺区公民館方面",
+            "dirId": "sunabe",
             "weekday": {
                 "name": "平日",
                 "value": "weekday"
