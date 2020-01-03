@@ -17,9 +17,9 @@ class App extends Component {
         };
 
         this.toggleDirection = event => {
-            console.log(event.target.dataset.dirname);
             this.setState({
                 direction: event.target.dataset.dirname,
+                directionId: event.target.dataset.dirid,
                 type: event.target.dataset.type,
                 day: event.target.dataset.day,
                 dayId: event.target.dataset.dayid

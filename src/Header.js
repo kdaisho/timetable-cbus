@@ -2,11 +2,7 @@ import React, { Component } from "react";
 
 class Header extends Component {
     constructor(props) {
-        console.log("ya", props);
         super(props);
-        // this.state = {
-        //     title: props.headerItem.title
-        // };
     }
 
     render() {

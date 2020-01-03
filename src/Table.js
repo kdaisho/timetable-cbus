@@ -3,13 +3,11 @@ import React, { Component } from "react";
 class Table extends Component {
     constructor(props) {
         super(props);
-        this.state = {};
-        console.log(props.arrivals);
-        console.log(props.directionId);
-        console.log(props.dayId);
     }
 
     render() {
+        const dir = this.props.directionId;
+        const day = this.props.dayId;
         return (
             <div className="container">
                 <h2 className="title is-5">
@@ -25,9 +23,7 @@ class Table extends Component {
                                 </tr>
                             </thead>
                             <tbody>
-                                {/* {this.props.arrivals[this.props.directionId][
-                                    this.props.dayId
-                                ].map(row => {
+                                {this.props.arrivals[dir][day].map(row => {
                                     return (
                                         <tr key={row.id}>
                                             <td className="fixed">
@@ -38,7 +34,7 @@ class Table extends Component {
                                             ))}
                                         </tr>
                                     );
-                                })} */}
+                                })}
                             </tbody>
                         </table>
                     </div>
