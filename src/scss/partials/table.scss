@@ -1,0 +1,36 @@
+.container-table {
+    max-width: 100%;
+    margin-left: 1.5rem;
+    position: relative;
+    .table-scroll {
+        overflow-x: auto;
+        margin-left: 139px;
+    }
+}
+.table {
+    border-collapse: collapse;
+
+    td {
+        border: 1px solid #999;
+        height: 60px;
+        padding: 0 9px;
+        text-align: center;
+        width: 50px;
+    }
+
+    span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+
+    .fixed {
+        position: absolute;
+        left: 0;
+        padding: 0 9px;
+        width: 100%;
+        max-width: 120px;
+    }
+}

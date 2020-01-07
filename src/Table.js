@@ -12,7 +12,9 @@ const Table = props => {
                     <table className="table">
                         <thead>
                             <tr>
-                                <td className="fixed">停留所</td>
+                                <td className="fixed">
+                                    <span>停留所</span>
+                                </td>
                                 <td colSpan="6">&nbsp;</td>
                             </tr>
                         </thead>
@@ -20,7 +22,9 @@ const Table = props => {
                             {arrivals[directionId][dayId].map(row => {
                                 return (
                                     <tr key={row.id}>
-                                        <td className="fixed">{row.name}</td>
+                                        <td className="fixed">
+                                            <span>{row.name}</span>
+                                        </td>
                                         {row.hours.map(h => (
                                             <td key={h}>{h}</td>
                                         ))}

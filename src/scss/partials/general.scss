@@ -1,39 +1,16 @@
+body,
 body * {
     margin: 0;
     padding: 0;
 }
 
 header {
-    background: brown;
+    background: #444;
     color: #fff;
 }
 
-.buttons:last-child {
-    margin-bottom: 0;
-}
-
-.buttons-title {
-    display: inline-block;
-    padding-right: 1rem;
-    text-align: right;
-    width: 225px;
-}
-
-.container-table {
-    max-width: 100%;
-    margin-left: 1.5rem;
-    position: relative;
-}
-
-.table-scroll {
-    overflow-x: auto;
-    margin-left: 275px;
-}
-
-.fixed {
-    position: absolute;
-    left: 0;
-    padding: 0 50px;
-    text-align: right;
-    width: 300px;
+.container {
+    margin: 0 auto;
+    max-width: 780px;
+    width: 100%;
 }
