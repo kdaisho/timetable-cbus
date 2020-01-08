@@ -5,14 +5,11 @@ const Header = props => {
     return (
         <header>
             <div className="container">
-                <h1 className="title is-5 has-text-white">
-                    北谷町コミュニティバス
-                </h1>
+                <h1 className="title">北谷町コミュニティバス</h1>
                 {directions.map(dir => (
                     <div className="buttons" key={dir.id}>
                         <span className="buttons-title">{dir.dirName}</span>
                         <button
-                            className="button is-light is-small"
                             onClick={toggleDirection}
                             data-dirname={dir.dirName}
                             data-dirid={dir.dirId}
@@ -22,7 +19,6 @@ const Header = props => {
                             {dir.weekday.name}
                         </button>
                         <button
-                            className="button is-light is-small"
                             onClick={toggleDirection}
                             data-dirname={dir.dirName}
                             data-dirid={dir.dirId}

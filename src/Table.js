@@ -4,14 +4,14 @@ const Table = props => {
     const { arrivals, direction, day, directionId, dayId } = props;
     return (
         <div className="container">
-            <h2 className="title is-5">
+            <h2 className="direction-name">
                 {direction} - {day}
             </h2>
             <div className="container-table section">
                 <div className="table-scroll">
                     <table className="table">
                         <thead>
-                            <tr>
+                            <tr class="first-row">
                                 <td className="fixed">
                                     <span>停留所</span>
                                 </td>
