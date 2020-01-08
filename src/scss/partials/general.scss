@@ -5,8 +5,13 @@ body * {
     padding: 0;
 }
 
-.container {
+.wrapper {
     margin: 0 auto;
     max-width: 780px;
     width: 100%;
+
+    &.is-main {
+        box-sizing: border-box;
+        padding: 0 9px;
+    }
 }

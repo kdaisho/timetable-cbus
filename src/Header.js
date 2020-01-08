@@ -4,7 +4,7 @@ const Header = props => {
     const { directions, toggleDirection } = props;
     return (
         <header>
-            <div className="container">
+            <div className="wrapper">
                 <h1 className="title">北谷町コミュニティバス</h1>
                 {directions.map(dir => (
                     <div className="buttons" key={dir.id}>

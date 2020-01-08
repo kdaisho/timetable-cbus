@@ -3,11 +3,15 @@ import React from "react";
 const Table = props => {
     const { arrivals, direction, day, directionId, dayId } = props;
     return (
-        <div className="container">
+        <div className="wrapper is-main">
             <h2 className="direction-name">
                 {direction} - {day}
             </h2>
-            <div className="container-table section">
+            {/* <div>
+                <button onClick={}>Weekday</button>
+                <button onClick={}>Weekend</button>
+            </div> */}
+            <div className="wrapper-table">
                 <div className="table-scroll">
                     <table className="table">
                         <thead>

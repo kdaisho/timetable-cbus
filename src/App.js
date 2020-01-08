@@ -40,6 +40,7 @@ class App extends Component {
                     directionId={this.state.directionId}
                     day={this.state.day}
                     dayId={this.state.dayId}
+                    // toggleDay={this.toggleDay}
                 />
             </section>
         );

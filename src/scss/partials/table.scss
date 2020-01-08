@@ -3,9 +3,8 @@
     font-size: 1.25rem;
 }
 
-.container-table {
+.wrapper-table {
     max-width: 100%;
-    margin-left: 1.5rem;
     position: relative;
 
     .table-scroll {
@@ -47,6 +46,7 @@
         }
 
         .fixed {
+            border-width: 3px 3px 3px 0;
             left: 0;
             margin-top: -1px;
             max-width: 120px;
