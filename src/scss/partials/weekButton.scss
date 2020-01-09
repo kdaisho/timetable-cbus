@@ -1,0 +1,26 @@
+.week-btns {
+    display: flex;
+    margin: 24px auto -3px;
+    position: relative;
+    justify-content: flex-end;
+    width: calc(100% - 6px);
+    z-index: 30;
+    .week-btn {
+        background: #94af76;
+        border-radius: 4px 4px 0 0;
+        border-bottom: 5px solid #94af76;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bolder;
+        padding: 9px 12px;
+        width: 150px;
+        &:first-child {
+            margin-right: 6px;
+        }
+
+        &.is-blur {
+            border-bottom: 5px solid #fff;
+            opacity: 60%;
+        }
+    }
+}

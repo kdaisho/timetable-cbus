@@ -43,7 +43,10 @@ class App extends Component {
                 />
                 <div className="wrapper main-padding">
                     <h2 className="direction-name">{this.state.direction}</h2>
-                    <WeekButton toggleDay={this.toggleDay} />
+                    <WeekButton
+                        day={this.state.dayId}
+                        toggleDay={this.toggleDay}
+                    />
                     <Table
                         arrivals={this.state.arrivals}
                         directionId={this.state.directionId}
