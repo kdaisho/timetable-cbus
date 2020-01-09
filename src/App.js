@@ -14,7 +14,8 @@ class App extends Component {
             direction: headerItem.directions[0].dirName,
             directionId: headerItem.directions[0].dirId,
             day: headerItem.directions[0].weekday.name,
-            dayId: headerItem.directions[0].weekday.value
+            dayId: headerItem.directions[0].weekday.value,
+            searchTerm: ""
         };
 
         this.toggleDirection = event => {
@@ -32,12 +33,21 @@ class App extends Component {
                 dayId: day
             });
         };
+
+        this.handleSearch = event => {
+            console.log(event.target.value);
+            this.setState({
+                searchTerm: event.target.value
+            });
+        };
     }
 
     render() {
         return (
             <section>
                 <Header
+                    searchTerm={this.state.searchTerm}
+                    handleSearch={this.handleSearch}
                     directions={headerItem.directions}
                     toggleDirection={this.toggleDirection}
                 />
@@ -48,6 +58,7 @@ class App extends Component {
                         toggleDay={this.toggleDay}
                     />
                     <Table
+                        searchTerm={this.state.searchTerm}
                         arrivals={this.state.arrivals}
                         directionId={this.state.directionId}
                         dayId={this.state.dayId}

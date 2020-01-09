@@ -6,6 +6,15 @@ const Header = props => {
         <header>
             <div className="wrapper main-padding">
                 <h1 className="title">北谷町コミュニティバス</h1>
+                <div>
+                    <input
+                        type="text"
+                        name=""
+                        onChange={props.handleSearch}
+                        value={props.searchTerm}
+                        placeholder="Search bus stops..."
+                    />
+                </div>
                 {directions.map(dir => (
                     <div className="buttons" key={dir.id}>
                         <button
