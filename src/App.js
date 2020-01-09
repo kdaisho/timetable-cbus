@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { render } from "react-dom";
 import Header from "./Header";
 import Table from "./Table";
+import WeekButton from "./WeekButton";
 import headerItem from "../data/headerItem.json";
 import schedules from "../data/schedules.json";
 
@@ -20,9 +21,15 @@ class App extends Component {
             this.setState({
                 direction: event.target.dataset.dirname,
                 directionId: event.target.dataset.dirid,
-                type: event.target.dataset.type,
-                day: event.target.dataset.day,
-                dayId: event.target.dataset.dayid
+                type: event.target.dataset.type
+            });
+        };
+
+        this.toggleDay = event => {
+            const day = event.target.dataset.day;
+            this.setState({
+                day: headerItem[day].name,
+                dayId: day
             });
         };
     }
@@ -34,14 +41,15 @@ class App extends Component {
                     directions={headerItem.directions}
                     toggleDirection={this.toggleDirection}
                 />
-                <Table
-                    arrivals={this.state.arrivals}
-                    direction={this.state.direction}
-                    directionId={this.state.directionId}
-                    day={this.state.day}
-                    dayId={this.state.dayId}
-                    // toggleDay={this.toggleDay}
-                />
+                <div className="wrapper main-padding">
+                    <h2 className="direction-name">{this.state.direction}</h2>
+                    <WeekButton toggleDay={this.toggleDay} />
+                    <Table
+                        arrivals={this.state.arrivals}
+                        directionId={this.state.directionId}
+                        dayId={this.state.dayId}
+                    />
+                </div>
             </section>
         );
     }
