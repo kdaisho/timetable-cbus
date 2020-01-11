@@ -35,10 +35,13 @@ class App extends Component {
         };
 
         this.handleSearch = event => {
-            console.log(event.target.value);
             this.setState({
                 searchTerm: event.target.value
             });
+        };
+
+        this.clearSearch = () => {
+            this.setState({ searchTerm: "" });
         };
     }
 
@@ -50,9 +53,16 @@ class App extends Component {
                     handleSearch={this.handleSearch}
                     directions={headerItem.directions}
                     toggleDirection={this.toggleDirection}
+                    clearSearch={this.clearSearch}
                 />
                 <div className="wrapper main-padding">
                     <h2 className="direction-name">{this.state.direction}</h2>
+                    <p
+                        className="search-display"
+                        style={{ display: !this.state.searchTerm && "none" }}
+                    >
+                        検索ワード：{this.state.searchTerm}
+                    </p>
                     <WeekButton
                         day={this.state.dayId}
                         toggleDay={this.toggleDay}

@@ -1,5 +1,6 @@
 body,
 body * {
+    color: $black;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -14,6 +15,14 @@ button {
     }
 }
 
+.is-white {
+    color: #fff;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
 .wrapper {
     margin: 0 auto;
     max-width: 780px;
@@ -22,5 +31,11 @@ button {
 
 .main-padding {
     box-sizing: border-box;
-    padding: 0 9px;
+    padding: 12px 9px;
+}
+
+.direction-name {
+    color: $black;
+    font-size: 1.25rem;
+    margin-bottom: 9px;
 }

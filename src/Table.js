@@ -10,7 +10,7 @@ const Table = props => {
                     <thead>
                         <tr className="first-row">
                             <td className="fixed">
-                                <span>停留所</span>
+                                <span className="is-white">停留所</span>
                             </td>
                             <td colSpan="6">&nbsp;</td>
                         </tr>

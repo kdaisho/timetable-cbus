@@ -12,14 +12,15 @@
         color: #fff;
         font-size: 1rem;
         font-weight: bolder;
-        padding: 9px 12px;
-        width: 150px;
+        padding: 9px 12px 10px;
+        width: 120px;
         &:first-child {
             margin-right: 6px;
         }
 
         &.is-blur {
             border-bottom: 5px solid #fff;
+            height: 50px;
             opacity: 60%;
         }
     }
