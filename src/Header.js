@@ -9,7 +9,7 @@ const Header = props => {
                     <h1 className="title is-white">
                         北谷町コミュニティバス{" "}
                         <span className="nowrap is-white">北ルート&nbsp;</span>
-                        <span className="date is-white">2019/6/1 -</span>
+                        <span className="date is-white">2019/6/1&nbsp;-</span>
                     </h1>
                 </div>
                 <div className="search-container">
@@ -37,7 +37,10 @@ const Header = props => {
                     {directions.map(dir => (
                         <button
                             key={dir.id}
-                            className="header-button"
+                            className={
+                                "header-button " +
+                                (props.directionId === dir.dirId && "active")
+                            }
                             onClick={toggleDirection}
                             data-dirname={dir.dirName}
                             data-dirid={dir.dirId}

@@ -4,12 +4,31 @@
 
     .table-scroll {
         overflow-x: auto;
-        margin-left: 139px;
+        margin-left: 189px;
     }
 
     .table {
         border-collapse: collapse;
         width: 100%;
+
+        &.is-weekend {
+            thead {
+                tr.first-row,
+                tr:nth-child(1) td.fixed {
+                    background: $darkPink;
+                }
+            }
+            tr,
+            tr:nth-child(odd) td.fixed {
+                background: $lightPink;
+            }
+            tbody {
+                tr:nth-child(even),
+                tr:nth-child(even) .fixed {
+                    background: lighten($lightPink, 15%);
+                }
+            }
+        }
 
         thead {
             tr.first-row,
@@ -22,7 +41,7 @@
 
         tr,
         tr:nth-child(odd) td.fixed {
-            background: $light-green;
+            background: $lightGreen;
         }
 
         td {
@@ -43,18 +62,28 @@
 
         .fixed {
             border-width: 3px 3px 3px 0;
-            left: 0;
+            left: 51px;
             margin-top: -1px;
             max-width: 120px;
+            min-width: 0;
             padding: 0 9px;
             position: absolute;
             width: 100%;
+            &.is-first {
+                left: 0;
+                width: 30px;
+                z-index: 40;
+            }
+        }
+
+        .icon-map {
+            font-size: 1.25rem;
         }
 
         tbody {
             tr:nth-child(even),
             tr:nth-child(even) .fixed {
-                background: lighten($light-green, 15%);
+                background: lighten($lightGreen, 15%);
             }
         }
     }

@@ -19,6 +19,7 @@ class App extends Component {
         };
 
         this.toggleDirection = event => {
+            console.log(event.target.dataset);
             this.setState({
                 direction: event.target.dataset.dirname,
                 directionId: event.target.dataset.dirid,
@@ -54,6 +55,7 @@ class App extends Component {
                     directions={headerItem.directions}
                     toggleDirection={this.toggleDirection}
                     clearSearch={this.clearSearch}
+                    directionId={this.state.directionId}
                 />
                 <div className="wrapper main-padding">
                     <h2 className="direction-name">{this.state.direction}</h2>

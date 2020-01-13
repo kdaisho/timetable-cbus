@@ -1,21 +1,23 @@
 import React from "react";
 
 const WeekButton = props => {
-    let weekBlur, weekendBlur;
-    props.day === "weekend"
-        ? (weekBlur = "is-blur")
-        : (weekendBlur = "is-blur");
     return (
         <div className="week-btns">
             <button
-                className={`${weekBlur} week-btn`}
+                className={
+                    "week-btn is-weekday" +
+                    (props.day === "weekday" ? " active" : "")
+                }
                 onClick={props.toggleDay}
                 data-day="weekday"
             >
                 平日
             </button>
             <button
-                className={`${weekendBlur} week-btn`}
+                className={
+                    "week-btn is-weekend" +
+                    (props.day === "weekend" ? " active" : "")
+                }
                 onClick={props.toggleDay}
                 data-day="weekend"
             >

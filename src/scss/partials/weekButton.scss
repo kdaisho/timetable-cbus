@@ -6,22 +6,36 @@
     width: calc(100% - 6px);
     z-index: 30;
     .week-btn {
-        background: #94af76;
+        border-bottom: 5px solid #fff;
         border-radius: 4px 4px 0 0;
-        border-bottom: 5px solid #94af76;
         color: #fff;
         font-size: 1rem;
         font-weight: bolder;
+        height: 50px;
+        opacity: 0.6;
         padding: 9px 12px 10px;
         width: 120px;
+
         &:first-child {
             margin-right: 6px;
         }
 
-        &.is-blur {
-            border-bottom: 5px solid #fff;
-            height: 50px;
-            opacity: 60%;
+        &.is-weekday {
+            background: $matcha;
+            &.active {
+                border-bottom: 5px solid $matcha;
+            }
+        }
+
+        &.is-weekend {
+            background: $darkPink;
+            &.active {
+                border-bottom: 5px solid $darkPink;
+            }
+        }
+
+        &.active {
+            opacity: 1;
         }
     }
 }

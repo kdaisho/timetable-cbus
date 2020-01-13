@@ -6,10 +6,15 @@ header {
         align-items: flex-end;
         display: flex;
         flex-flow: row wrap;
-        margin-bottom: 18px;
+        @media (min-width: 768px) {
+            margin-bottom: 18px;
+        }
         .title {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             margin: 0 9px 9px;
+            @media (min-width: 768px) {
+                font-size: 1.5rem;
+            }
         }
         .date {
             font-weight: lighter;
@@ -62,14 +67,19 @@ header {
         }
 
         .header-button {
-            background: $light-yellow;
-            border: 1px solid darken($light-yellow, 30%);
+            background: $lightYellow;
+            border: 1px solid darken($lightYellow, 30%);
             border-radius: 4px;
             display: inline-block;
             font-size: 1rem;
             flex: 0 0 45%;
+            opacity: 0.6;
             text-align: center;
             width: 100%;
+
+            &.active {
+                opacity: 1;
+            }
 
             @media (min-width: 768px) {
                 flex: 0 0 240px;
