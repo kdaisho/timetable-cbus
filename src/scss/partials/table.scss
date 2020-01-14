@@ -52,7 +52,7 @@
             min-width: 50px;
         }
 
-        span {
+        .absolute {
             position: absolute;
             left: 50%;
             top: 50%;
@@ -84,6 +84,48 @@
             tr:nth-child(even),
             tr:nth-child(even) .fixed {
                 background: lighten($lightGreen, 15%);
+            }
+        }
+    }
+}
+.scrollbar-wrapper {
+    color: #fff;
+    position: absolute;
+    pointer-events: none;
+    right: 15px;
+    text-align: center;
+    top: 16px;
+    width: calc(100% - 222px);
+    @media (min-width: 601px) {
+        display: none;
+    }
+    .hint {
+        color: #fff;
+        font-size: 0.75rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .scrollbar {
+        align-items: center;
+        display: flex;
+        flex-flow: row nowrap;
+        .bar {
+            background: #fff;
+            height: 8px;
+            width: 100%;
+        }
+        .triangle {
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            height: 0;
+            width: 0;
+
+            &.is-left {
+                border-right: 10px solid #fff;
+            }
+            &.is-right {
+                border-left: 10px solid #fff;
             }
         }
     }

@@ -28,6 +28,14 @@ class Table extends Component {
         return (
             <div className="wrapper-table">
                 <div className="table-scroll">
+                    <div className="scrollbar-wrapper">
+                        <p className="hint">スクロールできます</p>
+                        <div className="scrollbar">
+                            <div className="triangle is-left"></div>
+                            <div className="bar"></div>
+                            <div className="triangle is-right"></div>
+                        </div>
+                    </div>
                     <table
                         className={
                             "table" + (dayId === "weekend" ? " is-weekend" : "")
@@ -36,12 +44,16 @@ class Table extends Component {
                         <thead>
                             <tr className="first-row">
                                 <td className="fixed is-first">
-                                    <span className="is-white">地図</span>
+                                    <span className="absolute is-white">
+                                        地図
+                                    </span>
                                 </td>
                                 <td className="fixed">
-                                    <span className="is-white">停留所</span>
+                                    <span className="absolute is-white">
+                                        停留所
+                                    </span>
                                 </td>
-                                <td colSpan="6">&nbsp;</td>
+                                <td colSpan="6"></td>
                             </tr>
                         </thead>
                         <tbody>
@@ -57,12 +69,14 @@ class Table extends Component {
                                                 className="fixed is-first"
                                                 onClick={this.toggleModal}
                                             >
-                                                <span className="icon-map">
+                                                <span className="absolute icon-map">
                                                     📌
                                                 </span>
                                             </td>
                                             <td className="fixed">
-                                                <span>{row.name}</span>
+                                                <span className="absolute">
+                                                    {row.name}
+                                                </span>
                                             </td>
                                             {row.hours.map(h => (
                                                 <td key={h}>{h}</td>
