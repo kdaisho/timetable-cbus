@@ -1,23 +1,34 @@
 import React, { Component } from "react";
 import Modal from "./Modal";
+import mapList from "../data/mapList.js";
 
 class Table extends Component {
     constructor() {
         super();
         this.state = {
-            url: "",
-            showModal: false
+            showModal: false,
+            mapUrl: ""
         };
 
-        this.toggleModal = event => {
-            this.setState({ showModal: !this.state.showModal });
+        this.toggleModal = id => {
+            if (!this.state.showModal) {
+                const selectedObj = mapList.filter(obj => {
+                    return obj.id === id;
+                });
+                console.log(selectedObj[0].url);
+                this.setState({ mapUrl: selectedObj[0].url });
+            }
+            this.setState({
+                showModal: !this.state.showModal
+            });
         };
     }
     render() {
         const { arrivals, directionId, dayId, searchTerm } = this.props;
-        const map = (
+        console.log("URL", this.state.mapUrl);
+        const googleMaps = (
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14304.345362205833!2d127.74513113827034!3d26.323703566801786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e513a2fdacb529%3A0x78a615d9ac2980ea!2zU3VuYWJlIENodWtpam_vvIh2aWEgWW9taXRhbu-8iQ!5e0!3m2!1sen!2sca!4v1578778488631!5m2!1sen!2sca"
+                src={`https://www.google.com/maps/embed?${this.state.mapUrl}`}
                 width="100%"
                 height="100%"
                 frameBorder="0"
@@ -66,8 +77,11 @@ class Table extends Component {
                                     return (
                                         <tr key={row.id}>
                                             <td
-                                                className="fixed is-first"
-                                                onClick={this.toggleModal}
+                                                className="fixed is-first hover-cursor"
+                                                data-id={row.id}
+                                                onClick={() =>
+                                                    this.toggleModal(row.id)
+                                                }
                                             >
                                                 <span className="absolute icon-map">
                                                     📌
@@ -94,7 +108,7 @@ class Table extends Component {
                                 className="modal-content"
                                 onClick={event => event.stopPropagation()}
                             >
-                                {map}
+                                {googleMaps}
                             </div>
                         </div>
                     </Modal>

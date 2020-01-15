@@ -39,3 +39,9 @@ button {
     font-size: 1.25rem;
     margin-bottom: 9px;
 }
+
+.hover-cursor {
+    &:hover {
+        cursor: pointer;
+    }
+}
