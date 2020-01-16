@@ -15,7 +15,6 @@ class Table extends Component {
                 const selectedObj = mapList.filter(obj => {
                     return obj.id === id;
                 });
-                console.log(selectedObj[0].url);
                 this.setState({ mapUrl: selectedObj[0].url });
             }
             this.setState({
@@ -25,7 +24,6 @@ class Table extends Component {
     }
     render() {
         const { arrivals, directionId, dayId, searchTerm } = this.props;
-        console.log("URL", this.state.mapUrl);
         const googleMaps = (
             <iframe
                 src={`https://www.google.com/maps/embed?${this.state.mapUrl}`}

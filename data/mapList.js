@@ -22,7 +22,7 @@ export default [
     {
         id: "chatan-miyagi",
         url:
-            "pb=!1m18!1m12!1m3!1d258.21654240561855!2d127.74623404000138!3d26.328646106508334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e513a0127e5b09%3A0x57dcc05bc4ba26c9!2sChatan-Miyagi%20Post%20Office-mae!5e0!3m2!1sen!2sca!4v1579055696006!5m2!1sen!2sca"
+            "pb=!1m18!1m12!1m3!1d5057.208288736751!2d127.74555956536281!3d26.326943925789788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e513a0129649f3%3A0xdb5715f22e9cfcce!2sChatan-Miyagi%20Post%20Office-mae!5e0!3m2!1sen!2sca!4v1579139540993!5m2!1sen!2sca"
     },
     {
         id: "hamagawa",
@@ -47,7 +47,7 @@ export default [
     {
         id: "hilton",
         url:
-            "pb=!1m18!1m12!1m3!1d5057.510619292641!2d127.75399155836323!3d26.320020786193673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5130f6e99aa33%3A0xc0a11dbb6789ef70!2s40-1%20Mihama%2C%20Chatan%2C%20Nakagami-gun%2C%20Okinawa%20904-0115%2C%20Japan!5e0!3m2!1sen!2sca!4v1579057048553!5m2!1sen!2sca"
+            "pb=!1m18!1m12!1m3!1d3576.2806636842115!2d127.75700385323069!3d26.317409876429245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5130f5f78a60b%3A0x8201c2a4acd7a092!2sHilton%20Okinawa%20Chatan%20Resort!5e0!3m2!1sen!2sca!4v1579136934724!5m2!1sen!2sca"
     },
     {
         id: "vessel",
@@ -86,82 +86,102 @@ export default [
     },
     {
         id: "kuwae-kosaten",
-        url: ""
+        url:
+            "pb=!1m18!1m12!1m3!1d5676.905628803446!2d127.75681182910483!3d26.319165079087973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5130411df04cb%3A0xc972b9f4077edbc!2sKuwae%20Crossing!5e0!3m2!1sen!2sca!4v1579137113131!5m2!1sen!2sca"
     },
     {
         id: "ja-okinawa",
-        url: ""
+        url:
+            "pb=!1m18!1m12!1m3!1d5057.5366587058925!2d127.75795890784899!3d26.31942442435195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5130146951265%3A0x4b612eac102ed683!2sJA%20Okinawa%20Chatan%20Branch!5e0!3m2!1sen!2sca!4v1579137181344!5m2!1sen!2sca"
     },
     {
         id: "chatan-yakuba",
-        url: ""
+        url:
+            "pb=!1m18!1m12!1m3!1d5057.462752065133!2d127.76030727687552!3d26.321117021938708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e513010240ef2b%3A0x139875cfff30bfa3!2sChatan%20Town%20Office!5e0!3m2!1sen!2sca!4v1579138933830!5m2!1sen!2sca"
     },
     {
         id: "mikasaku",
-        url: ""
+        url:
+            "pb=!1m18!1m12!1m3!1d5676.74875733134!2d127.7664992509769!3d26.322368097936163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e512556f7cfed7%3A0x967fc458f630ca13!2sMikasaku!5e0!3m2!1sen!2sca!4v1579137331258!5m2!1sen!2sca"
     },
     {
         id: "chatan-kokomae",
-        url: ""
+        url:
+            "pb=!1m18!1m12!1m3!1d4913.482420689586!2d127.76378809971625!3d26.32121644860606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e513aaa4aaf2bf%3A0x1402e135055c5d52!2sChatan%20High%20School-mae!5e0!3m2!1sen!2sca!4v1579137417761!5m2!1sen!2sca"
     },
     {
         id: "chatan-sports",
-        url: ""
+        url:
+            "pb=!1m18!1m12!1m3!1d5057.300943062679!2d127.76673695030581!3d26.324822391936344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e513ab00065eed%3A0x5b1647dc366f3387!2sChatan%20Sports%20Center!5e0!3m2!1sen!2sca!4v1579137521104!5m2!1sen!2sca"
     },
     {
         id: "kuwae-kominkan",
-        url: ""
+        url:
+            "pb=!1m18!1m12!1m3!1d5057.271519354848!2d127.76691520194254!3d26.325496132591567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e51254c8acf4f7%3A0x241495374cf5188!2sKuwae%20Area%20Civic%20Hall-mae!5e0!3m2!1sen!2sca!4v1579137589782!5m2!1sen!2sca"
     },
     {
         id: "chatan-nirai",
-        url: ""
+        url:
+            "pb=!1m18!1m12!1m3!1d5057.2117929569395!2d127.76564892236638!3d26.326863691499106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e512546291de99%3A0x253eddda52314f!2sChatan%20Nirai%20Center!5e0!3m2!1sen!2sca!4v1579137701637!5m2!1sen!2sca"
     },
     {
         id: "chatan-rojin",
-        url: ""
+        url:
+            "pb=!1m18!1m12!1m3!1d893.9927077578311!2d127.76767382924768!3d26.32744399896147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e512536d4c4d8b%3A0xc9861255b14b9aca!2sChatan%20Town%20Elderly%20Welfare%20Center!5e0!3m2!1sen!2sca!4v1579137784229!5m2!1sen!2sca"
     },
     {
         id: "kamisedo-koen",
-        url: ""
+        url:
+            "pb=!1m18!1m12!1m3!1d5057.192488021416!2d127.77165338527743!3d26.32730570365645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5125211618ff5%3A0xc1511d5941725070!2sKamisedo-Kita%20Park!5e0!3m2!1sen!2sca!4v1579137840864!5m2!1sen!2sca"
     },
     {
         id: "kamisedo",
-        url: ""
+        url:
+            "pb=!1m18!1m12!1m3!1d5057.241370570626!2d127.77447689525656!3d26.326186459353696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e51251ee80c627%3A0x753929f88cb73083!2sKamisedo!5e0!3m2!1sen!2sca!4v1579137913612!5m2!1sen!2sca"
     },
     {
         id: "union",
-        url: ""
+        url:
+            "pb=!1m18!1m12!1m3!1d5357.99750667464!2d127.77050515292242!3d26.32538943445227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e51250e29a38d5%3A0x6d425a31866c6246!2sUnion%2C%20Chatan%20Shop!5e0!3m2!1sen!2sca!4v1579137981265!5m2!1sen!2sca"
     },
     {
         id: "chatan-shogakko",
-        url: ""
+        url:
+            "pb=!1m18!1m12!1m3!1d5057.294604366465!2d127.77584723035771!3d26.324967536021564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5125a050d5f3b%3A0x233af0b47f2bb677!2sChatan%20Elementary%20School%20Entrance!5e0!3m2!1sen!2sca!4v1579138068607!5m2!1sen!2sca"
     },
     {
         id: "tobaru-iriguchi",
-        url: ""
+        url:
+            "pb=!1m18!1m12!1m3!1d5057.471640826254!2d127.77711534258894!3d26.32091345835812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e512584460c60d%3A0x76df60e536075bff!2sTobaru%20Entrance!5e0!3m2!1sen!2sca!4v1579138135625!5m2!1sen!2sca"
     },
     {
         id: "danchi-iriguchi",
-        url: ""
+        url:
+            "pb=!1m18!1m12!1m3!1d5057.5793988619735!2d127.776138198356!3d26.318445550277538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e512f808480725%3A0x48fe05f79358d262!2sHousing%20Complex%20Entrance!5e0!3m2!1sen!2sca!4v1579138290787!5m2!1sen!2sca"
     },
     {
         id: "choei-sakaeguchi",
-        url: ""
+        url:
+            "pb=!1m18!1m12!1m3!1d5057.462551823239!2d127.77457227864888!3d26.321121607707944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e51257081af6e1%3A0xb28c62d98b22f7b!2sMunicipal%20Sakaeguchi%20Housing%20Complex%20Entrance!5e0!3m2!1sen!2sca!4v1579138353459!5m2!1sen!2sca"
     },
     {
         id: "takamiyagi",
-        url: ""
+        url:
+            "pb=!1m18!1m12!1m3!1d5057.384616966083!2d127.77047101747976!3d26.322906349063643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e51256c451951f%3A0x94546c336e2e1e2c!2sTakamiyagi%20Apartment-mae!5e0!3m2!1sen!2sca!4v1579138418450!5m2!1sen!2sca"
     },
     {
         id: "jimmy",
-        url: ""
+        url:
+            "pb=!1m18!1m12!1m3!1d3576.110022114306!2d127.76918198278057!3d26.322936648875288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e51255d2236e03%3A0x20fad504a944245f!2sJimmy';s%2C%20Chatan%20Shop-mae!5e0!3m2!1sen!2sca!4v1579139049070!5m2!1sen!2sca"
     },
     {
         id: "chatan-nirai-2",
-        url: ""
+        url:
+            "pb=!1m18!1m12!1m3!1d5057.2117929569395!2d127.76564892236638!3d26.326863691499106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e512546291de99%3A0x253eddda52314f!2sChatan%20Nirai%20Center!5e0!3m2!1sen!2sca!4v1579137701637!5m2!1sen!2sca"
     },
     {
         id: "chatan-rojin-2",
-        url: ""
+        url:
+            "pb=!1m18!1m12!1m3!1d893.9927077578311!2d127.76767382924768!3d26.32744399896147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e512536d4c4d8b%3A0xc9861255b14b9aca!2sChatan%20Town%20Elderly%20Welfare%20Center!5e0!3m2!1sen!2sca!4v1579137784229!5m2!1sen!2sca"
     }
 ];
