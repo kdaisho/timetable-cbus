@@ -3,19 +3,20 @@ import Modal from "./Modal";
 import mapList from "../data/mapList.js";
 
 class Table extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             showModal: false,
             mapUrl: ""
         };
-
-        this.toggleModal = id => {
+        this.toggleModal = (id, directionId) => {
             if (!this.state.showModal) {
                 const selectedObj = mapList.filter(obj => {
                     return obj.id === id;
                 });
-                this.setState({ mapUrl: selectedObj[0].url });
+                directionId === "sunabe" && selectedObj[0].urlSunabe
+                    ? this.setState({ mapUrl: selectedObj[0].urlSunabe })
+                    : this.setState({ mapUrl: selectedObj[0].url });
             }
             this.setState({
                 showModal: !this.state.showModal
@@ -78,7 +79,10 @@ class Table extends Component {
                                                 className="fixed is-first hover-cursor"
                                                 data-id={row.id}
                                                 onClick={() =>
-                                                    this.toggleModal(row.id)
+                                                    this.toggleModal(
+                                                        row.id,
+                                                        directionId
+                                                    )
                                                 }
                                             >
                                                 <span className="absolute icon-map">
